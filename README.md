@@ -4,7 +4,7 @@ Along my career my interest in topics related to general relativity grew up and 
 
 I'm a science entusiasth that recognice the importance to communicate the science to people, and that's why I'm participating as guide in Universum, science museum.
 
-Download mi [CV](https://enriquegap.github.io/cv.pdf)
+Download mi [CV](https://enriquegap.github.io/assets/CV.pdf)
 
 Contact me: [enrique.g@ciencias.unam.mx](mailto:enrique.g@ciencias.unam.mx)
 
