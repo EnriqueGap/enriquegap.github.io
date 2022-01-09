@@ -12,8 +12,6 @@ I'm a science entusiasth that recognice the importance to communicate the scienc
 
 Download mi [CV](cv.pdf)
 
-Link to my [GitHub profile](https://github.com/enriquegap/)
-
 Contact me: [enrique.g@ciencias.unam.mx](mailto:enrique.g@ciencias.unam.mx)
 
 # From now
