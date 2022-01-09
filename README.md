@@ -1,3 +1,4 @@
+# Enrique Galicia Pineda
 
 ### Physics and Math student
 
@@ -9,7 +10,7 @@ Along my career my interest in topics related to general relativity grew up and 
 
 I'm a science entusiasth that recognice the importance to communicate the science to people, and that's why I'm participating as guide in Universum, science museum.
 
-Download mi CV
+Download mi [CV](cv.pdf)
 
 Link to my [GitHub profile](https://github.com/enriquegap/)
 
@@ -21,4 +22,4 @@ I'm a disciplinade and organizate student. I'm looking keep parcipating in proje
 
 I want to keep growing as physicist and professionally.
 
-Let's collaborate!
+Let's collaborate! [enrique.g@ciencias.unam.mx](mailto:enrique.g@ciencias.unam.mx)
