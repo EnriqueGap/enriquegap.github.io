@@ -1,9 +1,3 @@
-# Enrique Galicia Pineda
-
-### Physics and Math student
-
-### Facultad de Ciencias, UNAM
-
 # About Me
 I'm 23 years old physics student with interest related to astrophysics, relativity and computational physics. 
 Along my career my interest in topics related to general relativity grew up and I had the posibility to learn more participating in projects in summer schools and my social service (profesional practice) that helped me to desarrollate new habilities and perform my computational and programming skills.
