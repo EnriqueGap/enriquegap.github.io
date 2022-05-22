@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd1e2ef2fd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/script.js"></script>
+    <title>Enrique Galicia</title>
+</head>
+<body class="secondary">
+    <h1 style="text-align: center;">Resume</h1>
+    <h1 style="text-align: center;">Enrique Galicia Pineda</h1>
+        <p style="text-align: center; font-family: 'Mulish', sans-serif;">Download <a href="media/cv/CV__en.pdf">English version</a>. Spanish version <a href="media/cv/CV_es.pdf">here</a>.</p>
+    <div class="content">
+        <h2>Formation</h2>
+        <ul>
+            <li>
+                <p>Bachelor in Physics. Facultad de Ciencias, UNAM. August 2017 - June 2022.</p>
+            </li>
+            <li>
+                <p>Student Exchange. Facultad de Ciencias, Universidad Autónoma de Madrid. January 2020 - May 2020</p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>My Skills</h2>
+        <p>
+            I'm a person who always want to collaborate width different people and learn from them. I consider myself as a disciplined, responsible, confidence and serious person.
+        </p>
+        <p>
+            I had some experience with modular programming, Makefiles, numerical algorithms and Deep Learning.
+        </p>
+        <p>
+            I'm want to take my computational abilities to the next step. I'm interested in parallel computing and Machine Learning Models.
+        </p>
+    </div>
+    <div class="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        var xValues = ["C", "Python", "Julia", "Fortran90"];
+        var yValues = [40, 37, 28, 15];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145"
+        ];
+        
+        new Chart("myChart", {
+          type: "doughnut",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+              responsive: true,
+              title: {
+                  display: true,
+                  text: "Language experience"
+                }
+            }
+        });
+        </script>
+    <div class="content">
+        <h3>I feel good working with</h3>
+        <p style="text-decoration: none"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/julialang/julialang-icon.svg" alt="julia" alt="git" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></p>
+        <h3>I had some experience and I'm learning</h3>
+        <p style="text-decoration: none"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/><img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/></p>
+
+    </div>
+    <div class="content">
+        <h2>Courses</h2>
+        <ul>
+            <li>
+                Data Science Introduction by Bedu.                May 2022 - Present
+            </li>
+            <li>
+                Innovaccion Virtual by Microsoft.                 May 2022 - Present
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Certifications</h2>
+        <ul>
+            <li>
+                NDG Linux Unhatched. By Cisco Networking Academy. 
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>From Now</h2>
+        <p>I'm currently working on my thesis based in the development of numerical models of compact objects. I'd love to keep learning about programming and computation techniques.</p>
+        <p>This year I'm looking a position in a internship or full-time job.</p>
+    </div>
+</body>
+</html>
