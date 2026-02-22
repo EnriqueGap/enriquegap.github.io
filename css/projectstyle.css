@@ -1,45 +1,153 @@
+a:hover,
+a:focus-visible {
+  color: #0c5b6f;
+}
+
+.site-header {
+  padding-top: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.header-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.back-link {
+  background-color: var(--chip);
+  padding: 0.5rem 0.9rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.main {
+  display: grid;
+  gap: 0.75rem;
+}
+
 .collapsible {
-    background-color: #e7f5f9;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
+  background-color: var(--accent);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 1rem 1.1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  border-radius: 14px;
+  transition: background-color 160ms ease, transform 160ms ease;
+  animation: riseIn 320ms ease both;
+}
+
+.collapsible:hover,
+.collapsible:focus-visible {
+  background-color: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+.main > .collapsible:nth-of-type(1) {
+  animation-delay: 0ms;
+}
+
+.main > .collapsible:nth-of-type(2) {
+  animation-delay: 80ms;
+}
+
+.main > .collapsible:nth-of-type(3) {
+  animation-delay: 160ms;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: var(--ink);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 1.2rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: max-height 0.25s ease, opacity 0.2s ease, transform 0.2s ease;
+  background-color: #fffdfd;
+  border-radius: 14px;
+  font-family: "Mulish", sans-serif;
+}
+
+.content.is-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content p {
+  margin: 0 0 0.9rem 0;
+  max-width: 68ch;
+}
+
+.content h2 {
+  margin-top: 1.1rem;
+}
+
+.site-footer {
+  text-align: right;
+  padding-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    justify-content: center;
     text-align: center;
-    outline: none;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
   }
-  
-  .active, .collapsible:hover {
-    background-color: #c3eaf5;
+
+  .site-footer {
+    text-align: center;
   }
-  
-  .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding: 1.25rem;
   }
-  
-  .active:after {
-    content: "\2212";
+
+  .collapsible {
+    text-align: center;
   }
-  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsible,
+  .back-link,
   .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #fffdfd;
-    font-family: 'Nunito', sans-serif;
+    animation: none;
+    transition: none;
   }
-  .secondary{
-    text-align: justify;
-    margin: 5% 10% 5% 10%;
-  }
-  h1 {
-    color: #000000;
-    font-family: 'Nunito', sans-serif;
-  }
+}

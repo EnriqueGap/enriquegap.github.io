@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,36 +12,50 @@
     <script src="https://kit.fontawesome.com/dd1e2ef2fd.js" crossorigin="anonymous"></script>
     <title>Enrique Galicia website</title>
 </head>
-<div style="padding: 2% 10% 0% 10%;text-align:right;">
-    <header>
-        <h1>Enrique Galicia Pineda</h1>
-        <h2>Data Scientist - Physicist UNAM</h2>
-    </header>
-</div>
-<div class="leftSide">
-    <img class="profile" src="media/profile.jpeg" alt="me_uwu">
-    <div style="margin-top: 1rem;">
-        <p>Thesis student and enthusiast coder.</p>
-        <a class="icon" href="https://www.github.com/EnriqueGap" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a class="icon" href="https://www.linkedin.com/in/enriquegap" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a class="icon" href="mailto:enrique.g@ciencias.unam.mx" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-</div>
-<div class="main">
-    <body>
-        <div class="content">
-            <h3>About Me</h3>
-            <p>I am a 24 years old Physicist working as Data Scientist at BBVA México.
-                My interests are related to Computational Physics, focused on develop machine learning models and perform hydrodinamic simulations.<br>
-                I'm currently working on my BS thesis related to develop numerical solutions to the equations of structure of NS and WD.</p>
-            <p>I have experience in numerical methods, hydrodynamic simulations, algorithms convergence and machine learning models.</p>
-            <p>I'm a passionate person, I always want to collaborate with different people and learn from them.</p>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="title">
+                <h1>Enrique Galicia Pineda</h1>
+                <p class="subtitle">Data Scientist - Physicist UNAM</p>
+            </div>
         </div>
-    </body>
-    <div class="good_stuff">
-        <a class="links" href="resume.html">Resume</a>
-        <a class="links" href="projects.html">Projects</a>
-    </div>
-</div>
-<div style="padding: 2% 10% 0% 10%;text-align:right;">2023. Always on construction</div>
+    </header>
+    <main class="container layout">
+        <aside class="leftSide">
+            <img class="profile" src="media/profile.png" alt="Portrait of Enrique Galicia Pineda">
+            <div class="left-meta">
+                <p>Enthusiast coder.</p>
+                <a class="icon" href="https://www.github.com/EnriqueGap" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/enriquegap" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a class="icon" href="mailto:enrique.g@ciencias.unam.mx" target="_blank" rel="noreferrer">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span class="sr-only">Email</span>
+                </a>
+            </div>
+        </aside>
+        <section class="main">
+            <div class="content">
+                <h3>About Me</h3>
+                <p><strong>DSc / Physicist focused on AI and modeling for business decision making.</strong></p>
+                <p>I have 3+ years of experience developing machine learning solutions in academic and corporate environments. I design scalable ML solutions that translate business problems into measurable impact. Experience includes LLM-based automation, similarity models for credit assignment, customer lifetime value, profitability, and churn modeling.</p>
+                <p>Background in statistical methods, NLP research, and teaching programming and numerical analysis. I lead data-driven initiatives and communicate results clearly across technical and business teams.</p>
+                <p><em>Current role:</em> Expert Data Scientist at BBVA México.</p>
+            </div>
+            <nav class="good_stuff" aria-label="Site">
+                <a class="links" href="projects.html">Projects</a>
+                <a class="links" href="media/cv/CV__en.pdf" target="_blank" rel="noreferrer" aria-label="Open CV in English">
+                    Resume
+                </a>
+            </nav>
+        </section>
+    </main>
+    <footer class="site-footer container">2026. All rights reserved</footer>
+</body>
 </html>

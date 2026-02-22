@@ -1,0 +1,50 @@
+:root {
+  --ink: #111111;
+  --bg: #ffffff;
+  --accent: #e7f5f9;
+  --accent-strong: #c3eaf5;
+  --chip: #fff0eb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: "Mulish", sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.6rem 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
